@@ -1,0 +1,80 @@
+#!/bin/bash
+#
+# script written to convert flvs from places like youtube and googlevideos to mpg files.
+#
+# note to self: $1 = 'flv filename'
+#
+#   todo:
+# - make the script able to deal with multiple files
+# - enable input variable to be the url, and make the script find the correct url to download and then convert?
+
+flv_file=$1
+
+####################
+# Convert Function #
+####################
+#this coverts the flv file specified ($1) to mpg
+
+function convert {
+	ffmpeg -i $flv_file -ab 56 -ar 22050 -b 500 -s 320x240 $name.mpg
+}  
+
+# Variables declared in above line (brackets are defaults used if option is omitted) 
+#
+# -ab = averate bitrate of music in kbit/s (default = 64)
+# -ar = audio sampling frequency (default = 44100 Hz)
+# -b  = video bitrate in kbit/s (default = 200 kb/s)
+# -s  = set frame size (wxh) (default = 160x128)
+
+###################
+# Rename Function #
+###################
+#this function asks what you want to call the new file created, and acts accordingly.
+
+rename ()
+{
+echo "By default the file will be named $flv_file.mpg - do you want to change this? (Y/N)"
+read rename_answer
+	if [ "$rename_answer" = "y" ];
+		then echo "What do you want to call it? (.mpg will automatically be appended to the filename)"
+		read name
+		echo "Converting flv file to $name.mpg"
+
+	else [ "$rename_answer" = "n" ];
+		name=$flv_file.mpg
+		echo "Converting file to $name"
+
+	fi
+}
+
+
+#####################
+# Deletion Function #
+#####################
+#this function asks if you want to delete the original file and acts accordingly.
+
+function flvdelete {
+
+	echo "Do you want to delete the original flv file? (Y/N)"
+
+	read reply
+
+	if [ "$reply" = "y" ];
+ 		then rm $flv_file
+		echo "File deleted: $flv_file"  #should I build in some kind of detection of 'need to be root to delete'?
+
+	elif [ "$reply" = "n" ];
+ 		then echo "Leaving file alone: $flv_file"
+
+	fi
+}
+
+###############
+# Main Script #
+###############
+
+rename ;
+convert ;
+flvdelete 
+
+exit

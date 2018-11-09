@@ -1,0 +1,57 @@
+sw_volume: 76
+audio_device_state:1:mpd alsamixer-output
+audio_device_state:1:toggle_visualizer
+state: pause
+current: 16
+time: 54.991000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:BrunuhVille/Age Of Gods.m4a
+1:BrunuhVille/Allure Of Darkness.m4a
+2:BrunuhVille/Battle For Camelot (Tartalo Music).m4a
+3:BrunuhVille/Black Heart.m4a
+4:BrunuhVille/Cry of the Dragons.m4a
+5:BrunuhVille/Cry of the Dragons (Ft. Sharm).m4a
+6:BrunuhVille/Dance with Dragons.m4a
+7:BrunuhVille/Dragon Empress.m4a
+8:BrunuhVille/DragonLand (Simple Version).m4a
+9:BrunuhVille/DragonLand (Metal Version).m4a
+10:BrunuhVille/Fallen Tears.m4a
+11:BrunuhVille/Falls of Glory.m4a
+12:BrunuhVille/Guardians Of The Woods.m4a
+13:BrunuhVille/Heart of Fire.m4a
+14:BrunuhVille/Hero's Journey.m4a
+15:BrunuhVille/King of the North.m4a
+16:BrunuhVille/Lumina.m4a
+17:BrunuhVille/Magic of Love.m4a
+18:BrunuhVille/Medieval Legends.m4a
+19:BrunuhVille/Mists of Avalon.m4a
+20:BrunuhVille/Northwind.m4a
+21:BrunuhVille/Our Farewell.m4a
+22:BrunuhVille/Our Hero (Hero's Journey - Vocal Version).m4a
+23:BrunuhVille/Remember (Vocal Version).m4a
+24:BrunuhVille/Rise of a Kingdom.m4a
+25:BrunuhVille/Rise of the Fallen.m4a
+26:BrunuhVille/Rising Sun.m4a
+27:BrunuhVille/Riversong (Vocal Version).m4a
+28:BrunuhVille/Sons of the Storm.m4a
+29:BrunuhVille/Spirit of the Wild.m4a
+30:BrunuhVille/The Elven Prophecy.m4a
+31:BrunuhVille/The Eternal Forest.m4a
+32:BrunuhVille/The Everlasting Symphony.m4a
+33:BrunuhVille/The Last of His Name.m4a
+34:BrunuhVille/The Realm of The Fallen King (Feat. Sharm).m4a
+35:BrunuhVille/The Song of the Dragonborn (BrunuhVille feat. Sharm)-UBXRig18t08.m4a
+36:BrunuhVille/The Voice of the Forest.m4a
+37:BrunuhVille/The Wolf and the Moon.m4a
+38:BrunuhVille/Vampire Tales (Blood, Love and Dust).m4a
+39:BrunuhVille/Winds Of Freedom.m4a
+40:BrunuhVille/Winterwolf.m4a
+41:BrunuhVille/Wolfborn.m4a
+playlist_end

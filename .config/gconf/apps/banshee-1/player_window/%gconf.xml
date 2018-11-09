@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="last_file_chooser_uri" mtime="1538113758" type="string">
+		<stringvalue>file:///home/halim</stringvalue>
+	</entry>
+	<entry name="height" mtime="1538113792" type="int" value="248"/>
+	<entry name="width" mtime="1538113792" type="int" value="1238"/>
+	<entry name="y_pos" mtime="1538113792" type="int" value="494"/>
+	<entry name="x_pos" mtime="1538113792" type="int" value="20"/>
+	<entry name="maximized" mtime="1538113792" type="bool" value="false"/>
+	<entry name="disable_album_grid" mtime="1538109754" type="bool" value="false"/>
+	<entry name="seek_slider_width" mtime="1538109754" type="int" value="186"/>
+	<entry name="source_view_width" mtime="1538113155" type="int" value="51"/>
+</gconf>

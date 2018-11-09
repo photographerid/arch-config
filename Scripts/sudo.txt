@@ -1,0 +1,75 @@
+# Show hidden:
+  defaults write com.apple.finder AppleShowAllFiles YES
+
+# Scale image:
+  sips -Z 640 *.jpg
+  #Batch:
+   find ~/Location/ -type f -name '*.jpg' -exec sips -Z 640 {} \;
+
+# Printf:
+  printf "file '%s'\n" ./*.mp4 > x.txt
+
+# Proxy FKUI:
+  localhost, 127.0.0.1, .ui.ac.id, .ui.edu, 152.118.0.0/16
+
+# Setting proxy terminal (temporer): 
+  export https_proxy="https://152.118.24.10:8080"
+
+# Quit app
+  osascript -e 'quit app “app name“’
+
+# Custom Massage log-in
+  sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText “Massage”  
+  sudo defaults delete /Library/Preferences/com.apple.loginwindow LoginwindowText
+
+# Software update
+  sudo softwareupdate -l   #—> list
+  sudo softwareupdate -ia   #—> install
+
+# Shutdown & restart
+  sudo shutdown -h now  #—>shutdown now
+  sudo shutdown -r now  #—>restart now
+  sudo shutdown -r +60  #—>with delay in minutes
+
+# Maintainance
+  sudo periodic daily weekly monthly
+
+# Brew: 
+  #Update: cd $(brew --repo) && git fetch && git reset --hard origin/master && brew update
+  #Download Youtube:  
+   youtube-dl 'link to youtube video'
+  #Use with proxy:  
+   https_proxy=https://152.118.24.10:8080 brew install foo
+
+# ffmpeg:
+  #Di mobil:
+   ffmpeg -i input -c:v msmpeg4 —s 640x480 -c:a libmp3lame “output.avi"
+  #ffmpeg batch convert:
+   for f in *.mp4; do ffmpeg -i "$f" -c:v libx264 -profile:v baseline -s 320x180 -c:a aac "${f%.mp4}iPod.mp4"; done
+  #ffmpeg iPod:
+   ffmpeg -i “input” -c:v libx264 -profile:v baseline -s 320x180 -c:a aac “out.mp4”
+  #ffmpeg iPhone:
+   ffmpeg -i “input” -c:v libx264 -profile:v High -s 960x408 -c:a aac “out.mp4” 
+  #ffmpeg select section:
+   ffmpeg -i video.mp4 -ss 00:01:00 -to 00:02:00 -c copy cut.mp4
+   ——> hrs:mnt:sc.milisc
+  #ffmpeg concat:
+   #create list: 
+    printf "file '%s'\n" ./*.mp4 > concat.txt
+    ffmpeg -f concat -safe 0 -i concat.txt -c copy output
+   #using intermediate:
+    ffmpeg -i input1.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts intermediate1.ts #then
+    ffmpeg -i input2.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts intermediate2.ts #and so on
+    ffmpeg -i "concat:intermediate1.ts|intermediate2.ts" -c copy -bsf:a aac_adtstoasc output.mp4
+  #ffmpeg subtitle:
+   #di .mkv:
+    -c:s subrip
+   #di .mp4:
+    -c:s mov_text
+
+#setting script permision
+ chmod 700 FirstScrip
+
+#BasicTex
+ #install package
+  sudo tlmgr install [package name]

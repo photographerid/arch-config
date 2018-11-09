@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="library-location" mtime="1535553063" type="string">
+		<stringvalue>/home/halim/Music</stringvalue>
+	</entry>
+	<entry name="expanded" mtime="1538109754" type="bool" value="true"/>
+	<entry name="move-on-info-save" mtime="1535553061" type="bool" value="false"/>
+	<entry name="copy-on-import" mtime="1535553061" type="bool" value="false"/>
+</gconf>

@@ -1,0 +1,138 @@
+[video-player]
+repeat=false
+display=true
+display-translated-subtitle=false
+automatically-open-video=true
+
+audio-sink=autoaudiosink
+video-sink=xvimagesink
+font-desc=Sans 26
+shaded-background=true
+force-aspect-ratio=true
+text-valignment=baseline
+
+[waveform]
+scrolling-with-player=true
+scrolling-with-selection=true
+respect-timing=true
+display=false
+
+[interface]
+maximize-window=false
+used-autosave=false
+use-dynamic-keyboard-shortcuts=true
+window-x=20
+window-y=42
+window-width=1238
+window-height=736
+paned-main-position=240
+paned-multimedia-position=0
+
+max-undo=20
+ask-to-save-on-exit=false
+
+[extension-manager]
+Selection=enable
+Document Management=enable
+Reverse Text And Translation=enable
+Template Management=enable
+Insert Subtitle=enable
+Error Checking=enable
+Insert Subtitle From Keyframe=enable
+Dialoguize=enable
+Spell Checking=enable
+Stylize=enable
+Scale Subtitles=enable
+Plain Text=enable
+Command=enable
+Style Editor=enable
+Split Document=enable
+Apply Translation=enable
+Best Fit=enable
+Timing From Player=enable
+Stack Subtitles=enable
+Edit Cell=enable
+Extend Length=enable
+Sort Subtitles=enable
+Find And Replace=enable
+Video Player Management=enable
+Keyframes Management=enable
+External Video Player=enable
+Split Subtitle=enable
+Keyboard Shortcuts=enable
+Time Mode Management=enable
+Duplicate Subtitle=enable
+Move After Preceding Subtitle=enable
+View Manager=enable
+Clipboard=enable
+Text Correction=enable
+Preferences=enable
+Combine Subtitles=enable
+Adjust Time=enable
+Italicize=enable
+Waveform Management=enable
+Move Subtitles=enable
+Minimize Duration=enable
+Type Writer=enable
+Documents Navigation=enable
+About=enable
+Remove Subtitle=enable
+Change Framerate=enable
+Join Document=enable
+Sub Station Alpha=enable
+MPsub=enable
+BITC (Burnt-in timecode)=enable
+MPL2=enable
+Plain Text Format=enable
+SubRip=enable
+Sami=enable
+DCSubtitle=enable
+Timed Text Authoring Format 1.0=enable
+Adobe Encore DVD (NTSC)=enable
+MicroDVD=enable
+Spruce STL=enable
+Subtitle Editor Project=enable
+Advanced Sub Station Alpha=enable
+SubViewer2=enable
+Avid DS=enable
+SBV=enable
+Adobe Encore DVD (PAL)=enable
+
+[find-and-replace]
+column-text=true
+column-translation=true
+ignore-case=false
+used-regular-expression=false
+
+[view-manager]
+Simple=number;start;end;duration;text
+Advanced=number;start;end;duration;style;name;text
+Translation=number;text;translation
+Timing=number;start;end;duration;cps;text
+
+[encodings]
+encodings=ISO-8859-15;UTF-8
+used-auto-detected=true
+default=UTF-8
+
+[document]
+format=SubRip
+newline=Unix
+
+[timing]
+ignore-space=false
+min-display=1000
+min-gap-between-subtitles=100
+min-characters-per-second=5
+max-characters-per-second=25
+do-auto-timing-check=true
+
+[subtitle-view]
+property-alignment-center=false
+show-character-per-line=true
+columns-displayed=number;start;end;duration;text
+enable-rubberband-selection=false
+do-not-disable-actions-during-editing=false
+
+[dialog-last-folder]
+dialog-open-document=file:///home/halim/Movies
