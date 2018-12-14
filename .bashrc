@@ -1,8 +1,8 @@
 #Proxy UI
-export http_proxy=http://152.118.24.10:8080/
-export https_proxy=$http_proxy
-export ftp_proxy=$http_proxy
-export rsync_proxy=$http_proxy
+#export http_proxy=http://152.118.24.10:8080/
+#export https_proxy=$http_proxy
+#export ftp_proxy=$http_proxy
+#export rsync_proxy=$http_proxy
 
 # ~/.bashrc
 #
@@ -29,6 +29,7 @@ alias wifi="nmcli device wifi list"
 alias connect="nmcli device wifi connect"
 alias screenshot="import -window root"
 alias music="ncmpcpp"
+alias show="clear && neofetch && read"
 
 #setting bash prompt:
 #if [ "$EUID" -ne 0 ]
