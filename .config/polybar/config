@@ -63,7 +63,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 ;font-2 = siji:pixelsize=10;1
 font-2 = Wuncon Siji:pixelsize=9;1
 
-modules-left = i3
+modules-left = i3 mpd
 modules-center = 
 #modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = home filesystem alsa wlan cpu memory temperature battery date
@@ -185,6 +185,8 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+host = 127.0.0.1
+port = 6600
 
 icon-prev = 
 icon-stop = 
