@@ -30,6 +30,9 @@ alias connect="nmcli device wifi connect"
 alias screenshot="import -window root"
 alias music="ncmpcpp"
 alias spss="cd /opt/IBM/SPSS/Statistics/24/bin && ./statistics"
+alias show="clear && neofetch && read"
+alias spss="cd /opt/IBM/SPSS/Statistics/24/bin && ./statistics"
+alias uninstall="sudo pacman -Rnsu"
 
 #setting bash prompt:
 #if [ "$EUID" -ne 0 ]
