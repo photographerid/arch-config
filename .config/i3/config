@@ -179,6 +179,8 @@ bindsym $mod+r mode "resize"
 
 # Shortcuts
 bindsym $mod+b			exec $BROWSER
+bindsym $mod+M			exec --no-startup-id dmenumount
+bindsym $mod+U			exec --no-startup-id dmenuumount 
 #bindsym $mod
 
 
