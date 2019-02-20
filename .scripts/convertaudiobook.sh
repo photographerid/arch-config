@@ -5,7 +5,6 @@
 clear		#bersihin terminal
 
 echo Convert mulai...
-say convert begins
 echo
 
 books=*.mp3
@@ -31,4 +30,3 @@ echo
 
 echo Hapus file original
 rm $books
-say convert finished

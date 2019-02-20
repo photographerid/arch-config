@@ -6,7 +6,7 @@ do
     t=$(echo $f | cut -b -2)°C
     d=$(date '+%H:%M')
     root=$(lsblk -lf | awk '/^sda3/ {print $6":"$5}')
-    home=$(lsblk -lf | awk '/^sda4/ {print $6":"$5}')
+    home=$(lsblk -lf | awk '/^sdb1/ {print $6":"$5}')
     power=power:$(cat /sys/class/power_supply/BAT0/capacity)%
     wifi=$(nmcli device wifi list | awk '/^*/ {print $2}')
     xsetroot -name "$wifi|$power|$root|$home|$t|$d"

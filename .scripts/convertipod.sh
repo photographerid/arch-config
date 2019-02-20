@@ -4,7 +4,6 @@
 
 clear
 echo Convert mulai...
-say convert begins
 
 film=*.mp4
 
@@ -17,4 +16,3 @@ do
 done
 
 echo Convert selesai
-say convert finished

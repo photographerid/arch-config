@@ -5,7 +5,6 @@
 clear		#bersihin terminal
 
 echo Convert mulai...
-say convert begins
 echo
 
 songs=*.m4a
@@ -22,4 +21,3 @@ echo Convert selesai
 
 #echo Hapus m4a
 #rm $songs
-say convert finished

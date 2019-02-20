@@ -5,7 +5,6 @@
 clear		#bersihin terminal
 
 echo Rotate mulai...
-say rotate begins
 echo
 
 pictures=*.jpg
@@ -22,4 +21,3 @@ echo
 
 echo Hapus jpg
 #rm $pictures
-say convert finished
