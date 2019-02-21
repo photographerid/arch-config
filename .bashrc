@@ -35,6 +35,7 @@ alias spss="cd /opt/IBM/SPSS/Statistics/24/bin && ./statistics"
 alias uninstall="sudo pacman -Rnsu"
 alias mount="sudo dmenumount"
 alias umount="sudo dmenuumount"
+alias cameras="v4l2-ctl --list-devices"
 
 #setting bash prompt:
 #if [ "$EUID" -ne 0 ]
