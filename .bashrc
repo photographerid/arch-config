@@ -36,6 +36,7 @@ alias uninstall="sudo pacman -Rnsu"
 alias mount="sudo dmenumount"
 alias umount="sudo dmenuumount"
 alias cameras="v4l2-ctl --list-devices"
+alias mail="neomutt"
 
 #setting bash prompt:
 #if [ "$EUID" -ne 0 ]

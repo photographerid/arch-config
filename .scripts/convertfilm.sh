@@ -12,3 +12,4 @@ echo Convert selesai
 echo
 echo Hapus file original...
 rm "$1" 
+notify-send "Convert finish"

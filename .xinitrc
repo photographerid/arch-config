@@ -1,5 +1,6 @@
 transmission-daemon &
 xbindkeys &
+dunst &
 
 #exec i3
 
