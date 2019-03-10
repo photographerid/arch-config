@@ -16,3 +16,4 @@ do
 done
 
 echo Convert selesai
+notify-send ".gif to .mp4 fiished"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#convert lagu dr mp3 ke m4b
+#convert audiobook dr mp3 ke m4b
 
 clear		#bersihin terminal
 
@@ -30,3 +30,4 @@ echo
 
 echo Hapus file original
 rm $books
+notify-send "Audiobook finished"

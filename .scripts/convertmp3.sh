@@ -17,7 +17,7 @@ done
 echo
 
 echo Convert selesai
-#echo
 
-#echo Hapus m4a
-#rm $songs
+echo Hapus m4a
+rm $songs
+notify-send ".mp3 ready!"

@@ -11,13 +11,10 @@ pictures=*.jpg
 
 for f in $pictures
 do
-	convert -rotate '-90' "$f" "${f%.jpg}.jpg"
+	convert -rotate '-90' "$f" "${f%.jpg}_rotate.jpg"
 
 done
 echo
 
 echo Rotate selesai
-echo
-
-echo Hapus jpg
-#rm $pictures
+notify-send "Pictures rotated"
