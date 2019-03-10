@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#ganti dpi gambar 
+
+clear		#bersihin terminal
+
+echo Ganti dpi......
+echo
+
+pictures=*.jpg
+
+for f in $pictures
+do
+	convert "$f" -density 600 -units PixelsPerInch "${f%.jpg}_edit.jpg"
+
+done
+echo
+notify-send "dpi finish"
