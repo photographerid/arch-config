@@ -1,19 +1,19 @@
 #!/bin/bash
 
-#script utk convert film dari gif ke mp4
+#script utk convert format dan encoder film
 
 clear
 echo Convert mulai...
 
-film=*.gif
+film=*.wmv
 
 for f in $film
 do 
 	
-	ffmpeg -i "$f" -c:v libx264 "${f%.gif}.mp4"
+	ffmpeg -i "$f" -c:v libx264 -c:a aac "${f%.wmv}.mp4"
 	rm "$f"
 
 done
 
 echo Convert selesai
-notify-send ".gif to .mp4 fiished"
+notify-send "Convert finished"
