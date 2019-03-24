@@ -12,12 +12,8 @@
 
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
-
-#powerline-daemon -q
-#POWERLINE_BASH_CONTINUATION=1
-#POWERLINE_BASH_SELECT=1
-#. /usr/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
-
+#vi mode
+set -o vi
 alias p="sudo pacman"
 alias sleep="systemctl suspend"
 alias off="shutdown now"
