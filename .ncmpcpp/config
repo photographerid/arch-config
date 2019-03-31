@@ -279,7 +279,7 @@ current_item_inactive_column_suffix = $/r$(end)
 ## state (either unknown, play, pause, or stop) for its duration.
 ##
 #
-execute_on_player_state_change = "notify-send "Now playing:" "$(ncmpcpp --current-song)""
+execute_on_player_state_change = "notify-send "Now playing:" "$(ncmpcpp --current-song)" -i /usr/share/icons/Adwaita/24x24/devices/audio-headphones.png"
 #
 #playlist_show_mpd_host = no
 #
