@@ -85,6 +85,9 @@ Mod4 + Return
 "systemctl suspend"
 Mod4 + Escape
 
+"touchpad_toggle"
+Mod4 + F8
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
