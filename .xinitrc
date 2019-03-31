@@ -1,4 +1,3 @@
-transmission-daemon &
 xbindkeys &
 dunst &
 
