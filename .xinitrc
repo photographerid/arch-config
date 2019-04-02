@@ -1,5 +1,5 @@
 xbindkeys &
-dunst &
+systemctl --user import-environment DISPLAY #somewhat for dunst
 
 #exec i3
 
