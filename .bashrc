@@ -32,8 +32,8 @@ alias uninstall="sudo pacman -Rnsu"
 alias mount="sudo dmenumount"
 alias umount="sudo dmenuumount"
 alias cameras="v4l2-ctl --list-devices"
-alias mail="neomutt"
-alias radio="mpv http://most1058fm.com/streaming & disown && exit"
+alias mail="cd ~/Downloads && neomutt"
+alias radio="mpv http://most1058fm.com/streaming & disown"
 alias radio-off="kill -s STOP $(pidof mpv)"
 
 #setting bash prompt:
