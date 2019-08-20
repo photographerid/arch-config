@@ -1,7 +1,8 @@
 #!/bin/bash
 
-for file in *.JPG
+pictures=*.JPG
+for f in $pictures
 do
-	mv "$file" "${file%.JPG}.jpg"
+	mv "$f" "${f%.JPG}.jpg"
 done
 notify-send "Rename complete"

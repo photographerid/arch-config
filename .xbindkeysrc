@@ -73,7 +73,7 @@ XF86AudioLowerVolume
 "amixer set Master toggle"
 XF86AudioMute
 
-"exec $BROWSER"
+"exec tabbed surf -e"
 Mod4 + b
 
 "exec libreoffice"
