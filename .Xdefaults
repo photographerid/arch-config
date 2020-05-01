@@ -33,8 +33,8 @@ URxvt.intensityStyles:	false
 URxvt.background:       [70]#000000
 URxvt.foreground:	#f1efee
 URxvt.depth:		32
-URxvt.font: 		xft:Inconsolata:size=11
-!URxvt.font: 		xft:SourceCodePro-ExtraLight:size=10
+!URxvt.font: 		xft:Inconsolata:size=11
+URxvt.font: 		xft:SourceCodePro-ExtraLight:size=10
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
 !! Extensions

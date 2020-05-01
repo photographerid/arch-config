@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+clear		#bersihin terminal
+
+echo Convert mulai...
+echo
+
+videos=*.mkv
+
+for f in $videos
+do
+	ffmpeg -i "$f" \
+		-map 0:0 -map 0:1 -map 0:2 \
+		-c:v libx264 \
+		-pix_fmt yuv420p \
+		-c:a aac \
+		-c:s subrip \
+		"${f%.mkv_edit}.mkv"
+#		-s 626x360 \
+
+done
+echo
+
+echo Convert selesai
+
+#rm $videos
+notify-send ".mkv ready!"

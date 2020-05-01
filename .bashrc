@@ -11,6 +11,8 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias mv="mv -i"
+alias rm="rm -i"
 #PS1='[\u@\h \W]\$ '
 #vi mode
 set -o vi
@@ -33,9 +35,13 @@ alias mount="sudo dmenumount"
 alias umount="sudo dmenuumount"
 alias cameras="v4l2-ctl --list-devices"
 alias mail="cd ~/Downloads && neomutt"
-alias radio="mpv http://most1058fm.com/streaming & disown"
+alias radio="mpv http://most1058fm.com/streaming & exit"
 alias radio-off="kill -s STOP $(pidof mpv)"
-
+alias heroes3="cd ~/.wine/drive_c/Program\ Files\ \(x86\)/GOG.com/Heroes\ of\ Might\ and\ Magic\ 3\ Complete/ && wine Heroes3.exe"
+alias cuaca="clear && curl wttr.in"
+alias ns="notify-send"
+alias afk="cmatrix -s -u 9 -C cyan"
+alias tg="telegram-cli -N"
 #setting bash prompt:
 #if [ "$EUID" -ne 0 ]
 #        then export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
@@ -47,6 +53,7 @@ PS1='\[\e[1m\]\[\e[96m[\w]\]\n\[\e[93m\]\[\e[1m\]$ \[\e[0m\]'
 alias ls='ls -hN --color=auto --group-directories-first'
 alias crep="grep --color=always" # Color grep - highlight desired sequence.
 alias ccat="highlight --out-format=xterm256" #Color cat - print file with syntax highlighting.
+alias ..="cd .."
 
 #Pywal
 #(cat ~/.cache/wal/sequences &)

@@ -64,16 +64,16 @@
 ## Control + mouse button 2 release event starts rxvt
 #"rxvt"
 #  Control + b:2 + Release
-"amixer set Master 5%+"
+"amixer set Master 5%+ ; refbar"
 XF86AudioRaiseVolume
 
-"amixer set Master 5%-"
+"amixer set Master 5%- ; refbar"
 XF86AudioLowerVolume
 
 "amixer set Master toggle"
 XF86AudioMute
 
-"exec tabbed surf -e"
+"exec $BROWSER"
 Mod4 + b
 
 "exec libreoffice"

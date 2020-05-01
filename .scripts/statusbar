@@ -5,11 +5,11 @@ do
     f=$(sed 's/00$/°C/' /sys/class/thermal/thermal_zone0/temp)
     t=$(echo $f | cut -b -2)°C
     d=$(date '+%H:%M')
-    root=$(lsblk -lf | awk '/^sda3/ {print $6":"$5}')
-    home=🏠:$(lsblk -lf | awk '/^sdb1/ {print $5}')
-    power=⚡:$(cat /sys/class/power_supply/BAT0/capacity)%
-    volume=🔊:$(amixer get Master | awk -F'[][]' 'END{ print $2 }')
-    wifi=$(nmcli device wifi list | awk '/^*/ {print $2}')
-    xsetroot -name "$wifi | $volume | $power | $root | $home | $t | $d"
+    root=$(lsblk -lf | awk '/^sda3/ {print $7$6}')
+    home=🏠$(lsblk -lf | awk '/^sdb1/ {print $6}')
+    power=⚡$(cat /sys/class/power_supply/BAT0/capacity)%
+    volume=🔊$(amixer get Master | awk -F'[][]' 'END{ print $2 }')
+    wifi=$(nmcli device wifi list | awk '/^*/ {print $3}')
+    xsetroot -name " $wifi  $volume  $power  $root  $home  $t  $d"
     sleep 1m;
 done;

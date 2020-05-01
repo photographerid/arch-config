@@ -5,11 +5,12 @@
 clear
 echo Convert dimulai...
 echo
-ffmpeg -i "$1" -i "$2" -c:v copy -c:a copy -c:s subrip "$3"
+ffmpeg -i "$1" -i "$2" -c:v copy -c:a copy -c:s subrip "$3" &&
 echo
-echo Convert selesai
+echo Convert selesai &&
 
 echo
 echo Hapus file original...
 rm "$1" 
+rm "$2"
 notify-send "Convert finish"
