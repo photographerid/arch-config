@@ -5,8 +5,7 @@
 clear
 echo Mulai unduh
 echo
-megaget /Root/$1 -u photographerid@gmail.com -p AbHalSad081081 &&
+megaget /Root/$1 -u username@email.com -p password &&
 notify-send "$1 telah selesai diunduh " &&
-telegram-cli -W -e "msg Abdul_Sadikin $1 sudah selesai diunduh" ||
+telegram-cli -W -e "msg telegram_account $1 sudah selesai diunduh" ||
 notify-send "unduhan $1 terputus" ||
-telegram-cli -W -e "msg Abdul_Sadikin unduhan $1 terputus" 
